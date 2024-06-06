@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <!-- Calculator content starts here -->
+      <div class="calculator-parent" style="background-color: greenyellow">
+        <div>
+          <script src="script.js"></script>
+          Operand 1 : <input type="text" id="n1" /><br /><br />
+          Operand 2 : <input type="text" id="n2" /><br /><br />
+          <select name="" id="operators">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">x</option>
+            <option value="/">/</option>
+          </select>
+          <button onclick="calc();">=</button>
+          Answer : <input type="text" id="result" />
+        </div>
+      </div>
+      <!-- Calculator content ends here -->
+      <!-- Alert content starts here -->
+      <div class="alert-parent" style="background-color: skyblue">
+        <div id="greetingBox" class="hidden"></div>
+        <script src="clock.js"></script>
+      </div>
+      <!-- Alert content starts here -->
+      <!-- Other content starts here -->
+      <div class="other-parent" style="background-color: cyan">
+        <button id="colorButton" class="btn">Click me !!</button>
+        <script src="color.js"></script>
+      </div>
+      <!-- Other content starts here -->
+    </div>
+  </body>
+</html>
